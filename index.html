@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSM-5 創傷與壓力障礙 配對遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>DSM-5 創傷與壓力障礙 配對遊戲</h2>
+    <p>將診斷名稱拖曳到對應的案例上，然後提交答案！</p>
+
+    <div class="container">
+        <!-- 案例區 (已打亂順序) -->
+        <div class="box">
+            <p><strong>案例 1:</strong> 小芬（45 歲）母親去世超過一年，仍無法擺脫悲傷，無法恢復正常生活。</p>
+            <div class="dropzone" data-answer="Prolonged Grief Disorder"></div>
+        </div>
+
+        <div class="box">
+            <p><strong>案例 2:</strong> 小君（6 歲）對任何陌生人都過度親近，毫無警覺心。</p>
+            <div class="dropzone" data-answer="Disinhibited Social Engagement Disorder"></div>
+        </div>
+
+        <div class="box">
+            <p><strong>案例 3:</strong> 921 地震倖存者阿全，每次地震都極度焦慮，但無 PTSD 典型症狀。</p>
+            <div class="dropzone" data-answer="Other Specified Trauma- and Stressor-Related Disorder"></div>
+        </div>
+
+        <div class="box">
+            <p><strong>案例 4:</strong> 銀行行員阿欣，搶劫事件後兩週內持續驚恐、失眠，回想起槍枝場景。</p>
+            <div class="dropzone" data-answer="Acute Stress Disorder"></div>
+        </div>
+
+        <div class="box">
+            <p><strong>案例 5:</strong> 小明（5 歲）從育幼院成長，對照顧者完全冷漠，即使受傷也不尋求安慰。</p>
+            <div class="dropzone" data-answer="Reactive Attachment Disorder"></div>
+        </div>
+
+        <div class="box">
+            <p><strong>案例 6:</strong> 屏東學生小宇來台北讀書，因適應不良而焦慮、想休學。</p>
+            <div class="dropzone" data-answer="Adjustment Disorders"></div>
+        </div>
+
+        <div class="box">
+            <p><strong>案例 7:</strong> 阿志因工廠事故失去一隻手，家人發現他變得沉默寡言，疑似創傷反應。</p>
+            <div class="dropzone" data-answer="Unspecified Trauma- and Stressor-Related Disorder"></div>
+        </div>
+
+        <div class="box">
+            <p><strong>案例 8:</strong> 台鐵司機阿正，經歷嚴重事故後，反覆做惡夢，閃回戰場場景。</p>
+            <div class="dropzone" data-answer="PTSD"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- 診斷名稱 (拖曳區) -->
+    <div class="container" id="draggable-container">
+        <div class="draggable" draggable="true" data-name="Prolonged Grief Disorder">Prolonged Grief Disorder</div>
+        <div class="draggable" draggable="true" data-name="Disinhibited Social Engagement Disorder">Disinhibited Social Engagement Disorder</div>
+        <div class="draggable" draggable="true" data-name="Other Specified Trauma- and Stressor-Related Disorder">Other Specified Trauma- and Stressor-Related Disorder</div>
+        <div class="draggable" draggable="true" data-name="Acute Stress Disorder">Acute Stress Disorder</div>
+        <div class="draggable" draggable="true" data-name="Reactive Attachment Disorder">Reactive Attachment Disorder</div>
+        <div class="draggable" draggable="true" data-name="Adjustment Disorders">Adjustment Disorders</div>
+        <div class="draggable" draggable="true" data-name="Unspecified Trauma- and Stressor-Related Disorder">Unspecified Trauma- and Stressor-Related Disorder</div>
+        <div class="draggable" draggable="true" data-name="PTSD">PTSD</div>
+    </div>
+
+    <button id="submit">提交答案</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
