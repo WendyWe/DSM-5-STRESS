@@ -1,111 +1,66 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
     text-align: center;
-    background-color: #f8f8f8;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
-h2 {
-    color: #333;
-    padding: 10px;
+.game-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    padding: 10px;
+h1 {
+    color: #2c3e50;
 }
 
-/* 案例 Box */
-.box {
-    width: 100%;
-    max-width: 400px;
-    min-height: 120px;
-    background-color: white;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.4;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 診斷名稱 (可拖曳區) */
-.draggable {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    cursor: grab;
+#case-container {
+    background: #ecf0f1;
+    padding: 15px;
     border-radius: 5px;
-    text-align: center;
-    font-size: 14px;
-    width: 90%;
-    max-width: 300px;
+    margin-bottom: 20px;
 }
 
-.draggable:hover {
-    background-color: #45a049;
-}
-
-/* 拖放區 */
-.dropzone {
-    border: 2px dashed #aaa;
-    min-height: 50px;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-/* 正確與錯誤的提示 */
-.correct {
-    border: 3px solid green !important;
-    background-color: #d4edda !important;
-    color: black;
-}
-
-.incorrect {
-    border: 3px solid red !important;
-    background-color: #f8d7da !important;
-    color: black;
-}
-
-/* 按鈕設計 */
-#submit {
+.choices {
     margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #007BFF;
+}
+
+.choice-btn {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.choice-btn:hover {
+    background: #2980b9;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#next-case {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #27ae60;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    display: none;
 }
 
-#submit:hover {
-    background-color: #0056b3;
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* 響應式設計：針對手機 */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box, .draggable {
-        width: 90%;
-    }
+#next-case:hover {
+    background: #219150;
 }
